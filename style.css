@@ -1,0 +1,594 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* default is content-box: width min-width max-width height min-height and max-height */
+  /* border-box: its dimensions are border-box width and height i.e. border-width...*/
+  /* if box-sizing is set to border-box then,
+     the border area size can be explicitly defined with width, heigh, min-w,min-h...*/
+  font-family: "Poppins", sans-serif; 
+}
+
+.audiowide-regular {
+  font-family: "Audiowide", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  /*Colors*/
+  --white-color: #fff;
+  --dark-color: #252525;
+  --primary-color: #f5f5f7;
+  --secondary-color: #f3961c;
+  --light-pink-color: #faf4f5;
+  --medium-gray-color: #ccc;
+  --text-black-color: #1d1d1f;
+  --text-green-color: #308d46;
+  --text-orange-color: #f3961c;
+
+  /*Font size */
+  --font-size-s: 0.9rem;
+  --font-size-n: 1rem;
+  --font-size-m: 1.12rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.3rem;
+
+  /* Font weight */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Border radius */
+  --border-radius-s: 8px;
+  --border-radius-m: 30px;
+  --border-radius-circle: 50%;
+
+  /* Site max width */
+  --site-max-width: 1300px;
+}
+
+/* colors : #007aff 
+              #0000EE*/
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header styling */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background: var(--primary-color);
+}
+/* Navbar styling */
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: relative;
+  left: 0;
+  /* margin: 0 auto;
+   max-width: var(--site-max-width); */
+}
+
+.navbar .nav-logo {
+  width: 250px; /* Adjust as needed */
+  height: 80px; /* Adjust as needed */
+  object-fit: scale-down; /* Ensures the image scales well within the box */
+  overflow: hidden;
+}
+.navbar .nav-logo .logo-container {
+  position: relative;
+  display: inline-block;
+  padding-left: 50px;
+}
+
+.navbar .nav-logo .logo-container .logo-text {
+  /*  color: var(--text-black-color); */
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for perfect centering */
+  /* color:black; */ /* White with transparency */
+  /* color: rgba(32, 1, 118, 0.3);  */
+  /* color: rgba(22, 19, 31, 1);*/
+  color: darkslateblue;
+  /* z-index: 10;  Ensures text is above the image */
+  /*   mix-blend-mode: overlay;  */ /* Helps blend with the image */
+  white-space: nowrap;
+  /* opacity: 0.3; */
+  padding-left: 50px;
+
+  /* backdrop-filter: blur(5px); */
+}
+.navbar .nav-logo .logo-container .logo-img {
+  height: 80px; /* Adjust size as needed */
+  width: auto;
+  display: block;
+  opacity: 0.5; /* Makes the image semi-transparent */
+  z-index: 10;
+}
+
+.navbar .nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar .nav-menu .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-menu .nav-item .nav-item-link {
+  padding: 10px 18px; /* need to use rem units for padding for better scalabiility with base font size. */
+  color: var(--text-black-color);
+  font-size: var(--font-size-m);
+  border-radius: var(--border-radius-m);
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+ .navbar .nav-menu .nav-item-link:hover {
+  color: #007aff;
+}
+
+.navbar .nav-menu .nav-text:hover {
+  color: #007aff;
+} 
+
+/* End of Header styling */
+
+/* main */
+main {
+  padding-top: 100px; /* Adjust this value according to the height of your navbar */
+}
+
+/* Start of My Profile */
+.my-profile{
+  display: flex;
+  padding: 0px 20px;
+  margin: 0px 20px;
+}
+.my-profile-details p {
+  padding: 10px;  
+  text-align: center;
+}
+.my-profile-details {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+/* End of My Profile */
+
+
+/* Start of Time Traveller Project */
+
+/* screenshot-section  */
+.project-timetraveller {
+  padding: 10px 0 100px;
+  background: var(--light-pink-color);
+}
+.project-tilesim {
+  padding: 0 0 100px;
+  background: var(--light-pink-color);
+}
+/* screenshot-header */
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers the items horizontally */
+  gap: 15px; /* Space between image and title */
+}
+
+.project-header .project-img {
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+  object-fit: contain; /* Ensures content scales correctly */
+}
+
+.project-header .project-title {
+  text-align: center;
+  padding: 15px 0 15px;
+  text-transform: uppercase;
+  font-size: var(--font-size-xl);
+}
+
+.project-header .project-title::after {
+  content: "";
+  width: 200px;
+  height: 5px;
+  display: block;
+  margin: 10px auto 0;
+  background: var(--secondary-color);
+  border-radius: var(--border-radius-circle);
+}
+
+.project-story {
+  font-size: var(--font-size-m);
+  text-align: center;
+  padding: 20px;
+}
+
+.project-story p {
+  padding: 10px;
+}
+
+.project-story ul {
+  list-style: none;
+}
+
+.project-story .story-medium-text {
+  font-weight: var(--font-weight-medium);
+}
+
+.project-story .story-bold-text {
+  font-weight: var(--font-weight-semibold);
+}
+
+.project-details {
+  margin: 0 auto;  
+  padding-left: 10px;
+  max-width: var(--site-max-width);
+  display: flex;
+  justify-content: space-around;  
+  align-items: flex-start; /* Ensures content stays aligned */
+}
+
+.header-title {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-medium);
+  text-align: center; 
+  white-space: nowrap;
+  width: 100%;
+  border-bottom: 1px solid #ddd; 
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+
+.project-details .slider-container {
+  margin: 0;
+  padding: 0 20px;   
+  flex: 0 0 60%;  /* Takes 60% of parent width */
+  /* width: 60%;   */
+  /* min-width:680px; */
+  position: relative;
+  overflow: hidden;
+  max-width: 620px;
+
+}
+
+.project-details .slider-wrapper { 
+  overflow: hidden;
+  margin: 0 20px 40px;
+  width: 540px;
+}
+.project-details .ss-list
+{
+  display: flex;
+  /* width:100%; */  
+  transition: transform 0.3s ease-in-out;  /* Smooth sliding */
+}
+.project-details .ss-item {
+  width: calc(100% / 3);  /* Ensure exactly 3 items fit */
+  max-width:180px;
+  height: 320px; 
+  list-style: none;
+  flex: 0 0 200px; /* Each slide takes 1/3 of container */
+}
+.project-details .ss-item .ss-image {
+  width: 100%;
+  height: 320px;
+  padding: 5px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+/* .project-details .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  background: var(--secondary-color);
+} */
+.swiper-button-prev, .swiper-button-next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.swiper-button-prev { left: 10px; }
+.swiper-button-next { right: 10px; }
+
+/* .project-details .swiper-slide-button {
+  margin-top: -50px; 
+  color:grey;
+  transition: 0.3 ease;
+}
+
+.project-details .swiper-slide-button:hover {
+  
+  color: #007aff;
+ 
+} */
+
+.card {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Push footer to the bottom */
+  height: 100%; /* Ensure card takes full height */  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* flex-grow:1 */
+  /*  flex: 1; min-width: 300px; */
+  border: 1px solid #ddd; /* Light border */
+  /* border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  */
+  margin: 10px; 
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);  
+  background: white;
+}
+
+.fourty-percent{
+  flex: 0 0 35%;  /* Takes 35% of parent width */  
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  background: #333;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 1px solid #ddd; /* Add border to the bottom */
+}
+.card-body {  
+  padding: 10px 0px 0px 25px;  
+  /* border-top: 2px solid #ddd; */ /* Add border to the top */
+  background: white;
+  color: black;
+  
+}
+
+.card-body .list-text {
+  padding-bottom: 10px;  
+}
+
+.card-body p {
+  padding: 20px;  
+  padding-bottom: 0px;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  padding-top: 0px; 
+  padding-bottom: 25px; 
+  border: 1px  #ddd;
+  border-bottom-left-radius: 15px; /* Match card border */
+  border-bottom-right-radius: 15px; /* Match card border */
+  background: white;
+}
+
+/* new section */
+.tools-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  object-fit: contain; 
+}
+.tech-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds space between SVG and image */
+  width: 100px;
+  height: 50px;
+}
+.tech-logo svg,
+.tech-logo img {
+  width: 100px; /* Adjust size as needed */
+  height: 50px;
+  object-fit: contain; /* Ensures content scales correctly */
+}
+
+/* Optional: Add border-radius to image for a smoother look */
+.tech-logo img {
+  border-radius: 8px;
+}
+
+.tech-logo a:hover svg {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-logo a:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tech-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.tech-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+ /*  gap: 10px; */
+  align-items: center;
+  justify-content: space-evenly; /* Centers images */
+  /* height: 100vh; */ 
+ 
+}
+.tech-list li{
+  list-style: none;
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensures consistency */
+}
+.tech-item img {
+  width: 85px; 
+  height: 85px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.tech-item img:hover {
+  transform: scale(1.1); /* Slightly enlarges the image */
+  filter: brightness(1.2); /* Makes it look brighter */
+}
+
+.download {
+  background: linear-gradient(135deg, #4CAF50, #2E7D32); /* Green gradient */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space for potential icons */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+.download-text{
+  padding-bottom: 10px;
+} 
+
+.download:hover {
+  background: linear-gradient(135deg, #388E3C, #1B5E20); /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarges */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* More depth on hover */
+}
+
+.download:active {
+  transform: scale(0.98); /* Slight press effect */
+}
+
+.cards{
+  display: flex;
+  /*  flex-wrap: wrap; Ensures responsiveness*/
+  width:100%;
+  height:540px;   
+  justify-content: space-evenly;
+  gap:20px;
+  padding: 15px;
+}
+/* End of Time Traveller Project */
+
+/* Start of Tile Sim project */
+/* .role{
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.project-tilesim .sub-title{
+  text-align: center;
+  white-space: nowrap; 
+} */
+.tools{
+  justify-content: flex-start;
+}
+.role{
+  height: 420px;
+}
+.role-body p img 
+{  
+  vertical-align: middle;    
+}
+.tools-body{
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+}
+.tools-tile{
+  height:420px;
+}
+
+.role-container {
+  display: flex;
+  gap: 100px; /* Space between boxes */
+  align-items: center;
+}
+
+.role-box { 
+  text-align: center;
+  min-width: 100px; 
+}
+
+.roles-box {
+  display: flex;
+  flex-direction: column; /* Stack roles vertically */ 
+  justify-content: center;  
+}
+
+.roles-box h6 {
+  
+  text-align: center;
+  min-width: 200px;
+}
+
+.header-sub-title {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+}
+
+.card-header .tile{  
+  font-size: 1.0rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 1px solid #ddd; /* Add border to the bottom */
+  white-space: nowrap;
+}
+
+/* End of Tile Sim project */
