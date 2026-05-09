@@ -178,6 +178,34 @@ main {
 }
 /* End of My Profile */
 
+/* Start of Certification section */
+.certification {
+  padding-bottom: 20px;
+}
+
+ .cert-logo {
+  display:flex;
+  align-items: center;
+  width: 125px; /* Adjust size as needed */
+  height: 125px;
+  object-fit: contain; /* Ensures content scales correctly */
+}
+
+.cert-img {
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cert-img img {
+  max-width: 90%;
+  width: 800px; /* adjust if needed */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+  display:block;
+  padding-bottom: 20px;
+}
+/* End of Certification section */
 
 /* Start of Time Traveller Project */
 
