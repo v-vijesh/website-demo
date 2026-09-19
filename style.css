@@ -220,8 +220,12 @@ main {
 /* Start of Time Traveller Project */
 
 /* screenshot-section  */
-.project-timetraveller {
+.project-chitrakathaa {
   padding: 10px 0 100px;
+  background: var(--light-pink-color);
+}
+.project-timetraveller {
+  padding: 0 0 100px;
   background: var(--light-pink-color);
 }
 .project-tilesim {
