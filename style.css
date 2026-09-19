@@ -557,7 +557,8 @@ main {
   display: flex;
   /*  flex-wrap: wrap; Ensures responsiveness*/
   width:100%;
-  height:540px;   
+  min-height:540px;   
+  height: auto;
   justify-content: space-evenly;
   gap:20px;
   padding: 15px;
@@ -631,6 +632,12 @@ main {
   border-top-right-radius: 15px;
   border-bottom: 1px solid #ddd; /* Add border to the bottom */
   white-space: nowrap;
+}
+
+.chitrakathaa-role {
+  height: auto;
+  min-height: 420px;
+  overflow: hidden;
 }
 
 /* End of Tile Sim project */
